@@ -51,6 +51,7 @@ public class EstabelecimentoResource {
 	
 	@DELETE
 	@Path("{id}")
+	@Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
 	public Estabelecimento delete(@PathParam("id") long id) {
 		return service.deleteEstabelecimento(id);
 	}
